@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Fro'House, salon de coiffure Afro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesSalon.css">
+    </head>
+    <body>
+        <header class="navbar navbar-expand-lg container-fluid py-0" id="Header">
+            <!--LOGO-->
+            <a href="index.html" id="Logo" class="nav-link navbar-brand ml-2 align-self-center" ><div class="d-inline-block" style="background-image: url(./LogoFull2.svg); height: 60px; width: 200px;background-repeat: no-repeat; background-size: contain;"></div></a>
+            <!--MENU-->
+            <span type="button" class="navbar-toggler" id="MobileMenuIcon" data-target="#NavbarContent" data-toggle="collapse"></span>
+            <div class="collapse navbar-collapse justify-content-end" id="NavbarContent">
+                <ul id="NavMenu" class="navbar-nav text-center">
+                    <li class="mx-lg-3 mx-xl-4 nav-item dropdown my-4 my-lg-0">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prestations</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./index.html#BlockPrestaFemmes">La Femme</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaHommes">L'Homme</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaEnfants">L'Enfant</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaSoins">Soins et Beauté</a>
+                        </div>
+                    </li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="./galerie.html" class="nav-link">Galerie</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalInfos">Infos</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalContact">Contact</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Facebook20.svg" alt="facebookLink"></a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Instagram20.svg" alt="instagramLink"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- MODAL INFOS -->
+        <div class="modal fade" id="ModalInfos" tabindex="-1" aria-labelledby="ModalInfos" aria-hidden="true"><!-- CONTENU MODALE INFOS DESKTOP-->
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex">
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-none d-lg-flex" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="70%" height="100%" frameborder="0" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="align-items-stretch pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE INFOS MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="100%" height="300px" frameborder="0" style="border-top-right-radius: 10px; border-top-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="py-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL CONTACT -->
+        <div class="modal fade" id="ModalContact" tabindex="-1" aria-labelledby="ModalContact" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex"><!-- CONTENU MODALE CONTACT DESKTOP-->
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-flex" style="padding: 0;">
+                        <div id="ModaContactLeft" style="width:70%; height: 100%; background-color: var(--lightbrown); border-top-left-radius: 10px; border-bottom-left-radius: 10px; color:var(--grey) ;" class="d-flex justify-content-center align-items-center">
+                            <form action="get" id="InfosClient">
+                                <div class="my-4">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div class="lname my-4">
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div class="my-4">
+                                    <textarea id="message" name="message" rows="5" cols="50" class="longInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div class="mb-0">
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 500px; height: 40px;">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE CONTACT MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <div id="Infos" class="my-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%; height: 100%;">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="align-items-stretch pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>  
+                        <div style="width:100%; height: auto; background-color: var(--lightbrown); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color:var(--grey) ; padding-bottom: 30px;" class="d-flex flex-column align-items-center">
+                            <form action="get" id="InfosClient"  class="d-flex flex-column align-items-center">
+                                <div class="mt-5">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div>
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div>
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div>
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div>
+                                    <textarea id="message" name="message" rows="5" cols="50" class="shortInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 300px; height: 40px;">
+                                </div>
+                            </form>
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDE ACTION SECTION-->
+        <ul class="d-none d-lg-inline-flex flex-column ml-3 float-left" id="SideActionButtons">
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalContact"><img onmouseover="src='./contact20_Hover.svg'" onmouseout="src='./contact20.svg'" src="./contact20.svg" alt="contactButtonSide" id="contactButtonSide"></a></li>
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalInfos"><img onmouseover="src='./info20_Hover.svg'" onmouseout="src='./info20.svg'" src="./Info20.svg" alt="InfoButtonSide" id="InfoButtonSide"></a></li>
+            <li class="my-4"><a href="./booking.html"><img onmouseover="src='./rdv20_Hover.svg'" onmouseout="src='./rdv20.svg'" src="./rdv20.svg" alt="BookingButtonSide" id="BookingButtonSide"></a></li>
+        </ul>
+        <!-- BANNER SECTION-->
+        <section id="BannerDiv">
+            <div class=" d-flex pinRight">
+                <div class="BannerLeft d-flex col-12 col-md-6 px-0">
+                    <div class="d-none d-md-block px-0 float-left invisible">
+                        <img src="./MaskBannerLeft.svg" alt="bannerMask" id="bannerMask">
+                    </div>
+                    <div class="align-self-center w-100 ">
+                        <h1 class="h2 mb-5 text-center text-md-left">Votre rendez-vous</h1>
+                        <div class="BannerShort d-md-none container-fluid px-0 mb-5 mx-0" style="background-image: url(./bannerBooking.jpg); background-size: cover;">
+                            <img src="./Mask.svg" alt="bannerMask" id="bannerMask" style="height: 250px;">
+                        </div>
+                        <!-- CTAs -->
+                        <div id="CTAs" class="w-50 d-none d-md-block " style="height:50px"></div>
+                    </div>
+                </div>
+                <div class="BannerRight d-none d-md-block col-6 px-0" style="background-image: url(./bannerBooking.jpg); background-size: cover;">
+                    <img src="./Mask.svg" alt="bannerMask" id="bannerMask">
+                </div>
+            </div>
+        </section>
+        <!-- SELECT PRESTA -->
+        <section id="SelectPresta" class="d-flex flex-column align-items-center text-center container-fluid px-0">
+            <h2 class="h3">Sélectionnez une prestation</h2>
+            <div>
+                <select name="Presta" size="1" class="Presta">
+                    <option class="descriptSelect" selected>Sélectionnez une prestation</option>
+                    <optgroup label="Réservation libre">
+                        <option>Acompte Femme<span>15,00€</span></option>
+                        <option>Acompte Homme<span>15,00€</span></option>
+                        <option>Acompte Enfant<span>15,00€</span></option>
+                    </optgroup>
+                    <optgroup label="Femmes">
+                        <option>Shampoing + Coupe<span>15,00€</span></option>
+                        <option>Shampoing + Coupe + Soins<span>15,00€</span></option>
+                        <option>Tresses / Locks<span>15,00€</span></option>
+                        <option>Coloration / Décoloration<span>15,00€</span></option>
+                        <option>Balayage<span>15,00€</span></option>
+                        <option>Extensions<span>15,00€</span></option>
+                        <option>Lissage Brésilien<span>15,00€</span></option>
+                        <option>Coiffure de cérémonie<span>15,00€</span></option>
+                    </optgroup>
+                    <optgroup label="Hommes">
+                        <option>Shampoing + Coupe<span>15,00€</span></option>
+                        <option>Tresses / Locks<span>15,00€</span></option>
+                        <option>Dégradé court<span>15,00€</span></option>
+                        <option>Coloration / Décoloration<span>15,00€</span></option>
+                    </optgroup>
+                    <optgroup label="Enfants">
+                        <option>Coupe Fille<span>15,00€</span></option>
+                        <option>Shampoing + Coupe Fille<span>15,00€</span></option>
+                        <option>Soins cheveux abîmés Fille<span>15,00€</span></option>
+                        <option>Coiffure de cérémonie Fille<span>15,00€</span></option>
+                        <option>Dégradé mi-long Garçon<span>15,00€</span></option>
+                        <option>Dégradé court Garçon<span>15,00€</span></option>
+                    </optgroup>
+                    <optgroup label="Soins et Beauté">
+                        <option>Soin des mains<span>15,00€</span></option>
+                        <option>Soins des pieds<span>15,00€</span></option>
+                        <option>Soin du visage<span>15,00€</span></option>
+                        <option>Maquillage de cérémonie<span>15,00€</span></option>
+                        <option>Pose faux ongles<span>15,00€</span></option>
+                        <option>Pose de cils<span>15,00€</span></option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="Date">
+                <select name="Date">
+                    <option >Août</option>
+                    <option >Septembre</option>
+                    <option >Octobre</option>
+                    <option >Novembre</option>
+                    <option >Décembre</option>
+                    <option >Janvier 2021</option>
+                    <option >Février 2021</option>
+                    <option >Mars 2021</option>
+                    <option >Avril 2021</option>
+                    <option >Mai 2021</option>
+                    <option >Juin 2021</option>
+                    <option >Juillet 2021</option>                
+                </select>
+            </div>
+            <div class="Jour col-12 col-lg-10">
+                <div class="SelectDayBox">
+                    <p>Aujourd'hui</p>
+                    <p></p>
+                </div>
+                <div class="SelectDayBox">
+                    <p>Demain</p>
+                    <p></p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Lundi</p>
+                    <p>3</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mardi</p>
+                    <p>4</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mercredi</p>
+                    <p>5</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Jeudi</p>
+                    <p>6</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Vendredi</p>
+                    <p>7</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Samedi</p>
+                    <p>8</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Dimanche</p>
+                    <p>9</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Lundi</p>
+                    <p>10</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mardi</p>
+                    <p>11</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mercredi</p>
+                    <p>12</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Jeudi</p>
+                    <p>13</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Vendredi</p>
+                    <p>14</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Samedi</p>
+                    <p>15</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Dimanche</p>
+                    <p>16</p>
+                </div>
+                <div class="SelectDayBox">
+                    <p>Lundi</p>
+                    <p>17</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mardi</p>
+                    <p>18</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mercredi</p>
+                    <p>19</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Jeudi</p>
+                    <p>20</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Vendredi</p>
+                    <p>21</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Samedi</p>
+                    <p>22</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Dimanche</p>
+                    <p>23</p>
+                </div>
+                <div class="SelectDayBox">
+                    <p>Lundi</p>
+                    <p>24</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mardi</p>
+                    <p>25</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Mercredi</p>
+                    <p>26</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Jeudi</p>
+                    <p>27</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Vendredi</p>
+                    <p>28</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Samedi</p>
+                    <p>29</p>
+                </div> 
+                <div class="SelectDayBox">
+                    <p>Dimanche</p>
+                    <p>30</p>
+                </div>                   
+            </div>
+            <div id="Time" class="row col-12 col-md-8 col-xl-7">
+                <div>10h00</div>
+                <div>10h30</div>
+                <div>11h00</div>
+                <div>11h30</div>
+                <div>12h00</div>
+                <div>12h30</div>
+                <div>13h00</div>
+                <div>13h30</div>
+                <div>14h00</div>
+                <div>14h30</div>
+                <div>15h00</div>
+                <div>15h30</div>
+                <div>16h00</div>
+                <div>16h30</div>
+                <div>17h00</div>
+                <div>17h30</div>
+            </div>
+            <form action="get" id="InfosClient">
+                <div>
+                    <label for="fname">Prénom: *</label>
+                    <input type="text" id="fname" name="fname" class="shortInput">
+                </div>
+                <div class="lname">
+                    <label for="fname">Nom: *</label>
+                    <input type="text" id="lname" name="lname" class="shortInput">
+                </div>
+                <div>
+                    <label for="email">Adresse email: *</label>
+                    <input type="email" id="emailAdresss" name="emailAdresss" class="longInput">
+                </div>
+                <div>
+                    <label for="email">Numéro de téléphone:</label>
+                    <input type="tel" id="phone" name="phone" class="longInput">
+                </div>
+                <div>
+                    <label for="message">Message: *</label>
+                    <textarea id="message" name="message" rows="5" cols="50" class="longInput"></textarea>
+                </div>
+            </form>
+            <div class="CTAsRdv d-flex justify-content-center mb-0">
+                <button class="infos secondaryButton">Ajouter une prestation</button>
+                <button class="rdv primaryButton CTARight">Valider mon rendez-vous</button>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center p-4">
+            <p class="m-5"><a href="./galerie.html">galerie</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalInfos">Infos</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalContact">Contact</a></p>
+            <p class="m-5"><a href="#">Mention Légales</a></p>
+            <p class="m-5"><a href="#">Conditions Générales de vente</a></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

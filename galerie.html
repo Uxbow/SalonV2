@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Fro'House, salon de coiffure Afro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesSalon.css">
+    </head>
+    <body>
+        <header class="navbar navbar-expand-lg container-fluid py-0" id="Header">
+            <!--LOGO-->
+            <a href="index.html" id="Logo" class="nav-link navbar-brand ml-2 align-self-center" ><div class="d-inline-block" style="background-image: url(./LogoFull2.svg); height: 60px; width: 200px;background-repeat: no-repeat; background-size: contain;"></div></a>
+            <!--MENU-->
+            <span type="button" class="navbar-toggler" id="MobileMenuIcon" data-target="#NavbarContent" data-toggle="collapse"></span>
+            <div class="collapse navbar-collapse justify-content-end" id="NavbarContent">
+                <ul id="NavMenu" class="navbar-nav text-center">
+                    <li class="mx-lg-3 mx-xl-4 nav-item dropdown my-4 my-lg-0">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prestations</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./index.html#BlockPrestaFemmes">La Femme</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaHommes">L'Homme</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaEnfants">L'Enfant</a>
+                            <a class="dropdown-item" href="./index.html#BlockPrestaSoins">Soins et Beauté</a>
+                        </div>
+                    </li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="./galerie.html" class="nav-link">Galerie</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalInfos">Infos</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalContact">Contact</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Facebook20.svg" alt="facebookLink"></a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Instagram20.svg" alt="instagramLink"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- MODAL INFOS -->
+        <div class="modal fade" id="ModalInfos" tabindex="-1" aria-labelledby="ModalInfos" aria-hidden="true"><!-- CONTENU MODALE INFOS DESKTOP-->
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex">
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-none d-lg-flex" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="70%" height="100%" frameborder="0" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="align-items-stretch pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE INFOS MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="100%" height="300px" frameborder="0" style="border-top-right-radius: 10px; border-top-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="py-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL CONTACT -->
+        <div class="modal fade" id="ModalContact" tabindex="-1" aria-labelledby="ModalContact" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex"><!-- CONTENU MODALE CONTACT DESKTOP-->
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-flex" style="padding: 0;">
+                        <div id="ModaContactLeft" style="width:70%; height: 100%; background-color: var(--lightbrown); border-top-left-radius: 10px; border-bottom-left-radius: 10px; color:var(--grey) ;" class="d-flex justify-content-center align-items-center">
+                            <form action="get" id="InfosClient">
+                                <div class="my-4">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div class="lname my-4">
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div class="my-4">
+                                    <textarea id="message" name="message" rows="5" cols="50" class="longInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div class="mb-0">
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 500px; height: 40px;">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE CONTACT MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <div id="Infos" class="my-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%; height: 100%;">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="align-items-stretch pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>  
+                        <div style="width:100%; height: auto; background-color: var(--lightbrown); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color:var(--grey) ; padding-bottom: 30px;" class="d-flex flex-column align-items-center"> 
+                            <form action="get" id="InfosClient"  class="d-flex flex-column align-items-center">
+                                <div class="mt-5">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div>
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div>
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div>
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div>
+                                    <textarea id="message" name="message" rows="5" cols="50" class="shortInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 300px; height: 40px;">
+                                </div>
+                            </form>
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDE ACTION SECTION-->
+        <ul class="d-none d-lg-inline-flex flex-column ml-3 float-left" id="SideActionButtons">
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalContact"><img onmouseover="src='./contact20_Hover.svg'" onmouseout="src='./contact20.svg'" src="./contact20.svg" alt="contactButtonSide" id="contactButtonSide"></a></li>
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalInfos"><img onmouseover="src='./info20_Hover.svg'" onmouseout="src='./info20.svg'" src="./Info20.svg" alt="InfoButtonSide" id="InfoButtonSide"></a></li>
+            <li class="my-4"><a href="./booking.html"><img onmouseover="src='./rdv20_Hover.svg'" onmouseout="src='./rdv20.svg'" src="./rdv20.svg" alt="BookingButtonSide" id="BookingButtonSide"></a></li>
+        </ul>
+        <!-- BANNER SECTION-->
+        <section id="BannerDiv">
+            <div class=" d-flex pinRight">
+                <div class="BannerLeft d-flex col-12 col-md-6 px-0">
+                    <div class="d-none d-md-block px-0 float-left invisible">
+                        <img src="./MaskBannerLeft.svg" alt="bannerMask" id="bannerMask">
+                    </div>
+                    <div class="align-self-center w-100 ">
+                        <h1 class="h2 mb-5 text-center text-md-left">Galerie photo</h1>
+                        <div class="BannerShort d-md-none container-fluid px-0 mb-5 mx-0" style="background-image: url(./galerieBanner.jpg); background-size: cover; background-position-y: center;">
+                            <img src="./Mask.svg" alt="bannerMask" id="bannerMask" style="height: 250px;">
+                        </div>
+                        <!-- CTAs -->
+                        <div id="CTAs" class="w-50 d-none d-md-block " style="height:50px"></div>
+                    </div>
+                </div>
+                <div class="BannerRight d-none d-md-block col-6 px-0" style="background-image: url(./galerieBanner.jpg); background-size: cover; background-position-y: center">
+                    <img src="./Mask.svg" alt="bannerMask" id="bannerMask">
+                </div>
+            </div>
+        </section>
+        <!-- GRILLE PRESTA -->
+        <section id="ImageGrid" class="d-flex flex-column align-items-center text-center container-fluid">
+            <h2 class="h3 mb-5">Nos prestations en image</h2>
+            <p class="col-10 col-md-8 text-left mb-5">Une collection de nos meilleurs créations est exposée sur cette page afin que vous puissiez trouver être inspirés en venant chez nous. <br>
+                Sont exposées à la fois les prestations que nous proposons mais également les prestations libres à la demandes de nos clients.</p>
+            <div class=" row col-12 col-lg-10 mb-5 gridItem">
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie1.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie2.jpg); background-size: cover;"></div>
+                    <p>Mohawk Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie3.jpg); background-size: cover;"></div>
+                    <p>Dégradé avec raie Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie4.jpg); background-size: cover;"></div>
+                    <p>Tresses stylisées Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie23.jpg); background-size: cover;"></div>
+                    <p>Coupe avec raie Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/new1.jpg); background-size: cover;"></div>
+                    <p>Dégradé classique avec décoloration Homme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie6.jpg); background-size: cover;"></div>
+                    <p>Coiffure de cérémonie Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie7.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie8.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie9.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/FemmesGalerie2.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie11.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Femmes8.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie13.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie14.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie15.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie16.png); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie20.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie18.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>
+                <div class="d-flex flex-column align-items-center col-6 col-sm-4 col-md-3 mb-5">
+                    <div class="mx-3 mx-md-4 mb-3 gridPic rounded" style="background-image: url(./images/Galerie21.jpg); background-size: cover;"></div>
+                    <p>Locks Femme</p>
+                </div>      
+            </div>
+            <button class="rdv tertiaryButton">Charger plus de photos</button>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center p-4">
+            <p class="m-5"><a href="./galerie.html">galerie</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalInfos">Infos</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalContact">Contact</a></p>
+            <p class="m-5"><a href="#">Mention Légales</a></p>
+            <p class="m-5"><a href="#">Conditions Générales de vente</a></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

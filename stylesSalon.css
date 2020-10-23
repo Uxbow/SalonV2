@@ -1,0 +1,725 @@
+:root {
+    --brown:#876464;
+    --pink:#EB7575;
+    --white:#fff;
+    --black:#464646;
+    --lightbrown: #eee9e9;
+    --beige:#f8f3f3;
+    --grey: #AEAEAE;
+}
+
+html {
+    scroll-behavior: smooth;
+  }  
+
+ul, ol{
+    list-style: none;
+}
+
+body{
+    color: var(--black);
+}
+
+#Header{
+    background-color: var(--white);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 100;
+}
+
+a{
+    color: var(--pink);
+}
+
+a:hover{
+    color: var(--pink);
+}
+
+#MobileMenuIcon{
+    background-image: url(./MenuSalonMobile.svg);
+    width: 40px;
+    height: 50px;
+    align-self: center;
+}
+
+#SideActionButtons{
+    position: fixed;
+    top: 90px;
+    z-index: 100;
+}
+
+
+#SideActionButtons a:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: all 300ms;
+} 
+
+#BannerDiv{
+    padding-top: 85px;
+}
+
+.pinRight{
+    margin-left: 150px;
+}
+
+.dropdown-menu{
+    border:none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-item{
+    color: var(--pink);
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color:var(--pink);
+}
+
+
+@font-face {
+    font-family: ARB;
+    src: url(./arlrdbd.ttf);
+}
+h1, h2{
+    font-family: ARB;
+    color: var(--pink);
+}
+
+h1{
+    margin-bottom: 100px ;
+}
+
+.BannerLeft{
+    background-image: url(./images/BannerDecoration.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.primaryButton{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--pink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--white);
+    border: none;
+}
+
+.secondaryButton{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--pink);
+    border: var(--pink) solid 3px;
+}
+
+.tertiaryButton{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--pink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--white);
+    border: none;
+}
+
+button:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: all 300ms;
+}
+
+section{
+    margin-bottom: 150px;
+}
+
+#Introduction > div{
+    margin-bottom: 200px;
+}
+.decoration{
+    margin-top: 2.5rem;
+    max-width: 550px;
+}
+.text{
+    border-left: 2px solid var(--pink);
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.prestationBox{
+    border-radius: 10px 0 0 10px;
+    background-color: var(--lightbrown);
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.prestaLeft h2{
+    margin-bottom: 50px;
+}
+
+.prestaRight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.gridElement{
+    background-color: var(--beige);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    padding: 10px;
+    width: 180px;
+    height: auto;
+}
+
+.descriptionPrestation{
+    background: var(--white);
+    opacity: 0;
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.descriptionPrestation:hover{
+    opacity: 0.9;
+    animation: animeDesc 0.3s;
+}
+
+.gridElement:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    animation: animeGE 0.3s;
+}
+
+.blocTitrePresta{
+    height: 38px;
+}
+
+.prestationBox .prestaRight .blocTitrePresta,.prestationBox .prestaRight p{
+    color: var(--brown);
+}
+
+.prestationBox a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.prestaHeadMob a{
+    text-decoration: none;
+}
+
+#LogoMidPage {
+    height: 120px;
+    width: 120px;
+}
+
+#AboutBlock{
+    background-color: var(--lightbrown);
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.prestaHeadMob{
+    background-color: var(--lightbrown);
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.prestaBlockItemMob{
+    background-color: var(--beige);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    color: var(--brown);
+}
+
+.BlockPrestaListItem{
+    padding-top: 80px;
+}
+.BlockPrestaListItem:nth-child(even) .prestationBox, .BlockPrestaListItem:nth-child(even) .prestationBox .gridElement{
+    background-color: var(--white);
+}
+
+.BlockPrestaListItem:nth-child(even) .prestaHeadMob, .BlockPrestaListItem:nth-child(even) .prestaHeadMob .prestaBlockItemMob{
+    background-color: var(--white);
+}
+
+.prestaListMob{
+    margin-bottom: 50px;
+}
+
+#SelectPresta {
+    margin-bottom: 200px;
+    font-size: 0.9em;
+}
+#SelectPresta div{
+    margin-bottom: 100px;
+}
+#SelectPresta h2{
+    margin-bottom: 100px;
+}
+
+#SelectPresta select{
+    height: 40px;
+    width:300px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    color: var(--black);
+}
+
+.descriptSelect{
+    font-style: italic;
+    color: #C4C4C4;
+}
+
+.Jour{
+    margin: 0 auto 100px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.SelectDayBox{
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-left: 30px;
+}
+
+.SelectDayBox p{
+    line-height: 50px;
+    width: 100px;
+    margin-bottom: 0;
+}
+
+#Time{
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#Time div{
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    line-height: 30px;
+    width: 100px;
+    margin: 20px;
+}
+#InfosClient{
+    width: 500px;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#InfosClient div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.CTARight{
+    margin-left: 50px;
+}
+
+#ModaContactLeft div{
+    margin-bottom: 20px;
+}
+
+
+#InfosClient button{
+    margin-left: 0;
+}
+.shortInput{
+    width: 200px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.longInput{
+    width: 500px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+input,textarea{
+    border-bottom: #AEAEAE 1px solid;
+    line-height: 25px;
+    background-color: transparent;
+}
+
+.Presta optgroup{
+    color: var(--pink);
+}
+
+.Presta option{
+    color: var(--black);
+}
+
+#outerDecoCircle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 10px solid var(--pink);
+}
+
+#innerCircle{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#DescriptPresta img{
+    width: 300px;
+    height: 300px;
+}
+
+.gridItem .gridPic{
+    width: 200px;
+    height: 200px;
+}
+
+.gridItem .gridPic p{
+    width: 200px;
+    height: 50px;
+    vertical-align: text-top;
+}
+
+footer{
+    background-color: var(--beige);
+}
+
+.dropdown-item{
+    transition-duration: 0.3s;
+}
+
+@keyframes animeGE {
+    from {box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);}
+    to {box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);}
+
+}
+
+@keyframes animeDesc{
+    from {opacity: 0;}
+    to {opacity: 0.9;}
+}
+
+@media screen and (max-width: 1400px){
+    .gridElement{
+        background-color: var(--beige);
+        border-radius: 5px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        align-items: center;
+        padding: 10px;
+        width: 150px;
+        height: auto;
+    }
+    
+    .descriptionPrestation{
+        background: var(--white);
+        opacity: 0;
+        height: 130px;
+        width: 130px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    body{
+        font-size: 0.95rem;
+    }
+    .h2{
+        font-size: 1.8rem;
+    }
+    .h3{
+        font-size: 1.5rem;
+    }
+    .primaryButton{
+        width: 180px;
+        height: 55px;
+        font-size: 0.8rem;
+    }
+    
+    .secondaryButton{
+        width: 180px;
+        height: 55px;
+        font-size: 0.8rem;
+    }
+
+    .tertiaryButton{
+        width: 180px;
+        height: 55px;
+        font-size: 0.8rem;
+    }
+
+    #DescriptPresta img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .gridItem .gridPic{
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        font-size: 0.9rem;
+    }
+    .h2{
+        font-size: 1.7rem;
+    }
+    .h3{
+        font-size: 1.3rem;
+    }
+    .primaryButton{
+        width: 160px;
+        height: 50px;
+        font-size: 0.75rem;
+    }
+    
+    .secondaryButton{
+        width: 160px;
+        height: 50px;
+        font-size: 0.75rem;
+    }
+
+    .tertiaryButton{
+        width: 160px;
+        height: 50px;
+        font-size: 0.75rem;
+    }
+
+    .BannerRight img, .BannerLeft img{
+        height: 300px;
+    }
+    .gridElement{
+        background-color: var(--beige);
+        border-radius: 5px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        padding: 10px;
+        width: 130px;
+        height: auto;
+    }
+    
+    .descriptionPrestation{
+        background: var(--white);
+        opacity: 0;
+        height: 110px;
+        width: 110px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .h2{
+        font-size: 1.6rem;
+    }
+    .h3{
+        font-size: 1.2rem;
+    }
+    .primaryButton{
+        width: 150px;
+        height: 50px;
+        font-size: 0.7rem;
+    }
+    .secondaryButton{
+        width: 150px;
+        height: 50px;
+        font-size: 0.7rem;
+    }
+
+    .tertiaryButton{
+        width: 150px;
+        height: 50px;
+        font-size: 0.7rem;
+    }
+
+    #SelectPresta select{
+        height: 40px;
+        width:250px;
+    }
+    #DescriptPresta img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .gridItem .gridPic{
+        width: 150px;
+        height: 150px;
+    }
+
+    #outerDecoCircle{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .pinRight{
+        margin-left: 50px;
+    }
+    
+    #AboutBlock p{
+        margin-bottom: 100px;
+    }
+    #Time div{
+        line-height: 40px;
+        width: 100px;
+        margin: 20px;
+    }
+    #DescriptPresta img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .gridItem .gridPic{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .h2{
+        font-size: 1.5rem;
+    }
+    .h3{
+        font-size: 1.1rem;
+    }
+    .primaryButton{
+        width: 140px;
+        height: 50px;
+        font-size: 0.65rem;
+    }
+    .secondaryButton{
+        width: 140px;
+        height: 50px;
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .primaryButton{
+        width: 165px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+
+    .secondaryButton{
+        width: 165px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+
+    .tertiaryButton{
+        width: 165px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+
+    #Logo{
+        padding: 0;
+
+    }
+    #Introduction p{
+        border: none;
+        padding-left: 0;
+    }
+
+    #Introduction > div{
+        margin-bottom: 100px;
+    }
+
+    .pinRight{
+        margin-left: inherit;
+    }
+
+    .Presta select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        box-shadow: 0 1px 4px var(--black);
+    }
+
+    .BannerShort img, .BannerLeft img{
+        height: 150px;
+    }
+    
+    #LogoMidPage {
+        height: 90px;
+        width: 90px;
+    }
+
+    #LogoMidPage p{
+        font-size: 0.8rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .prestaBlockItemMob p{
+        font-size: 0.9rem;
+    }
+    .BannerLeft{
+        background-image: none;
+    }
+    #DescriptPresta img{
+        width: 130px;
+        height: 130px;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .h6{
+        font-size: 0.8rem;
+    }
+
+    .prestaBlockItemMob p{
+        font-size: 0.7rem;
+    }
+
+    #InfosClient{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #SelectPresta .shortInput, #SelectPresta .longInput{
+        width: 300px;
+    }
+    #DescriptPresta img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .CTARight{
+        margin-left: 25px;
+    }
+    
+}

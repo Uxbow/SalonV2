@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Fro'House, salon de coiffure Afro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesSalon.css">        
+    </head>
+    <body>
+        <header class="navbar navbar-expand-lg container-fluid py-0" id="Header">
+            <!--LOGO-->
+            <a href="index.html" id="Logo" class="nav-link navbar-brand ml-2 align-self-center" ><div class="d-inline-block" style="background-image: url(./LogoFull2.svg); height: 60px; width: 200px;background-repeat: no-repeat; background-size: contain;"></div></a>
+            <!--MENU-->
+            <span type="button" class="navbar-toggler" id="MobileMenuIcon" data-target="#NavbarContent" data-toggle="collapse"></span>
+            <div class="collapse navbar-collapse justify-content-end" id="NavbarContent">
+                <ul id="NavMenu" class="navbar-nav text-center">
+                    <li class="px-lg-3 px-xl-4 nav-item dropdown my-4 my-lg-0">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prestations</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#BlockPrestaFemmes">La Femme</a>
+                            <a class="dropdown-item" href="#BlockPrestaHommes">L'Homme</a>
+                            <a class="dropdown-item" href="#BlockPrestaEnfants">L'Enfant</a>
+                            <a class="dropdown-item" href="#BlockPrestaSoins">Soins et Beauté</a>
+                        </div>
+                    </li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="./galerie.html" class="nav-link">Galerie</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalInfos">Infos</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="" class="nav-link" data-toggle="modal" data-target="#ModalContact">Contact</a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Facebook20.svg" alt="facebookLink"></a></li>
+                    <li class="mx-lg-3 mx-xl-4 nav-item my-4 my-lg-0"><a href="#" class="nav-link"><img src="./Instagram20.svg" alt="instagramLink"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- MODAL INFOS -->
+        <div class="modal fade" id="ModalInfos" tabindex="-1" aria-labelledby="ModalInfos" aria-hidden="true"><!-- CONTENU MODALE INFOS DESKTOP-->
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex">
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-none d-lg-flex" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="70%" height="100%" frameborder="0" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="align-items-stretch pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE INFOS MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15322.474315266896!2d-61.567516!3d16.240037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg!5e0!3m2!1sfr!2sfr!4v1599857193009!5m2!1sfr!2sfr" width="100%" height="300px" frameborder="0" style="border-top-right-radius: 10px; border-top-left-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0" style=" position: absolute; top: 0; left: 0;"></iframe>
+                        <div id="Infos" class="py-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <address class="mb-5">35 rue Ferdinand Forest<br>97122 Baie-Mahault</address>
+                            <ul id="Horaires" class="pl-0">
+                                <li><strong>En semaine</strong><span class="ml-3">de <time>10h00</time> à <time>17h30</time> </span></li>
+                                <li><strong>Le weekend</strong><span class="ml-3">de <time>10h00</time> à <time>15h00</time> </span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL CONTACT -->
+        <div class="modal fade" id="ModalContact" tabindex="-1" aria-labelledby="ModalContact" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl d-none d-lg-flex"><!-- CONTENU MODALE CONTACT DESKTOP-->
+                <div class="modal-content" style="height: 450px; border-radius: 10px;">
+                    <div class="modal-body d-flex" style="padding: 0;">
+                        <div id="ModaContactLeft" style="width:70%; height: 100%; background-color: var(--lightbrown); border-top-left-radius: 10px; border-bottom-left-radius: 10px; color:var(--grey) ;" class="d-flex justify-content-center align-items-center">
+                            <form action="get" id="InfosClient">
+                                <div class="my-4">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div class="lname my-4">
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div class="my-4">
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div class="my-4">
+                                    <textarea id="message" name="message" rows="5" cols="50" class="longInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div class="mb-0">
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 500px; height: 40px;">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="Infos" class="d-inline-flex flex-column align-items-center justify-content-center" style="width: 30%; height: 100%;">
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; top: 0; right: 0; width: 20px; height: auto;" class="pr-2 pt-2">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 40%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog modal-full-height modal-bottom d-lg-none"><!-- CONTENU MODALE CONTACT MOBILE/TABLETTE-->
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-body" style="padding: 0;">
+                        <div id="Infos" class="my-3 d-inline-flex flex-column align-items-center justify-content-center" style="width: 100%; height: 100%;">
+                            <img src="./LogoMidPage.svg" alt="Logo" id="LogoInfos" style="width: 20%;" class="mb-5">
+                            <div class="text-center mb-5">
+                                <img src="./Facebook25.svg" alt="Facebook">
+                                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+                            </div>
+                            <ul id="NumTelContact" class="align-items-stretch pl-0">
+                                <li><strong>Fixe :</strong><span class="ml-3">0590599878</span></li>
+                                <li><strong>Mobile :</strong><span class="ml-3">0690135435</span></li>
+                            </ul>
+                        </div>  
+                        <div style="width:100%; height: auto; background-color: var(--lightbrown); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color:var(--grey) ; padding-bottom: 30px;" class="d-flex flex-column align-items-center">
+                            <form action="get" id="InfosClient"  class="d-flex flex-column align-items-center">
+                                <div class="mt-5">
+                                    <input type="text" id="fname" name="fname" class="shortInput" placeholder="Prénom: *">
+                                </div>
+                                <div>
+                                    <input type="text" id="lname" name="lname" class="shortInput" placeholder="Nom: *">
+                                </div>
+                                <div>
+                                    <input type="email" id="emailAdresss" name="emailAdresss" class="shortInput" placeholder="Adresse Email : *">
+                                </div>
+                                <div>
+                                    <input type="tel" id="phone" name="phone" class="shortInput" placeholder="Numéro de téléphone:">
+                                </div>
+                                <div>
+                                    <textarea id="message" name="message" rows="5" cols="50" class="shortInput" placeholder="Message *"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Envoyer" class="primaryButton" style="width: 300px; height: 40px;">
+                                </div>
+                            </form>
+                            <img src="./icones/close25.svg" alt="close" type="button" data-dismiss="modal" aria-label="Close" style="color:var(--pink); position: absolute; bottom: 0; right: 0; width: 20px; height: auto;" class="pr-2 pb-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDE ACTION SECTION-->
+        <ul class="d-none d-lg-inline-flex flex-column ml-3 float-left" id="SideActionButtons">
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalContact"><img onmouseover="src='./contact20_Hover.svg'" onmouseout="src='./contact20.svg'" src="./contact20.svg" alt="contactButtonSide" id="contactButtonSide"></a></li>
+            <li class="my-4"><a href="" data-toggle="modal" data-target="#ModalInfos"><img onmouseover="src='./info20_Hover.svg'" onmouseout="src='./info20.svg'" src="./Info20.svg" alt="InfoButtonSide" id="InfoButtonSide"></a></li>
+            <li class="my-4"><a href="./booking.html"><img onmouseover="src='./rdv20_Hover.svg'" onmouseout="src='./rdv20.svg'" src="./rdv20.svg" alt="BookingButtonSide" id="BookingButtonSide"></a></li>
+        </ul>
+        <!-- BANNER SECTION-->
+        <section id="BannerDiv">
+            <div class=" d-flex pinRight">
+                <div class="BannerLeft d-flex col-12 col-md-6 px-0" style="background-image: none">
+                    <div class="d-none d-md-block px-0 float-left invisible">
+                        <img src="./MaskBannerLeft.svg" alt="bannerMask" id="bannerMask">
+                    </div>
+                    <div class="align-self-center w-100 ">
+                        <h1 class="h2 mb-5 text-center text-md-left">Votre expert en coiffure Afro<br>Hommes Femmes et Enfants</h1>
+                        <div class="BannerShort d-md-none container-fluid px-0 mb-5 mx-0" style="background-image: url(./Banner_V2.jpg); background-size: cover;">
+                            <img src="./Mask.svg" alt="bannerMask" id="bannerMask" style="height: 250px;">
+                        </div>
+                        <!-- CTAs -->
+                        <div id="CTAs" class="d-flex justify-content-center justify-content-md-start">
+                            <button onclick="window.location.href = './booking.html'" class="primaryButton">Prendre rendez-vous</button>
+                            <button class="secondaryButton CTARight" id="boutonInfos" data-toggle="modal" data-target="#ModalInfos">Infos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="BannerRight d-none d-md-block col-6 px-0" style="background-image: url(./Banner_V2.jpg); background-size: cover;">
+                    <img src="./Mask.svg" alt="bannerMask" id="bannerMask">
+                </div>
+            </div>
+        </section>
+        <!-- INTRODUCTION + CAROUSSEL -->
+        <section id="Introduction" class="container-md-fluid pl-0">
+            <div id="Expertise" class="pinRight d-flex">
+                <div class="col-10 mx-auto mx-md-0 col-md-5 px-0">
+                    <h2 class="h3">L'expertise Fro'House</h2>
+                    <p class="text">Coiffeur visagiste, votre salon femmes et enfants Afrique Antilles
+                        vous accueille à Baie-Mahault en Guadeloupe. Spécialistes du tissage,
+                        nous vous proposons des extensions de cheveux 100% naturels d'origine brésilienne,
+                        malaisienne ou indienne. Vous souhaitez un chignon ou une coiffure pour une cérémonie ?<br><br>
+                        Votre visagiste et spécialiste des cheveux afro est à votre disposition pour concrétiser la coupe
+                        de toutes vos envies !
+                    </p>
+                </div>
+                <img src="./DecoRight2.svg" alt="DecorationRight" id="DecorationRight" class="align-self-center decoration d-none d-md-inline offset-1 col-md-5">
+            </div>
+            <div id="Bien-être" class="pinRight d-flex">
+                <img src="./DecoLeft2.svg" alt="DecorationLeft" id="DecorationLeft" class="align-self-center decoration d-none d-md-inline col-md-5">
+                <div class="col-10 mx-auto offset-1 col-md-5 px-0">
+                    <h2 class="h3">Bien-être</h2>
+                    <p class="text">L'expérience de votre coiffeur visagiste dans le domaine du tressage des cheveux afro vous permet
+                        toutes les audaces et libertés. Venez découvrir notre gamme de soins anti-chute et anti-pelliculaire.
+                        Une esthéticienne est à votre disposition pour vous détendre.<br><br>Venez découvrir notre salon Afrique Antilles 
+                        afin de découvrir nos modèles de perruques personnalisées
+                    </p>
+                </div>  
+            </div>                
+        </section>
+        <section id="PrestaList"> <!-- PRESTA LIST LG -->
+            <!-- ANCRE BLOC FEMMES -->
+            <div id="BlockPrestaFemmes" class="BlockPrestaListItem">
+                <!-- CONTENU SECTION FEMMES DESKTOP-->
+                <div class="d-none d-lg-block pinRight container-lg-fluid">
+                    <!-- DÉBUT BLOCK PRESTA DESKTOP FEMMES-->
+                    <div class="prestationBox d-flex">
+                        <!-- PARTIE DESCRIPTION GAUCHE DESKTOP -->
+                        <div class="prestaLeft d-flex flex-column col-3 my-auto mx-auto p-2">
+                            <h2 class="h3">La femme</h2>
+                            <p class>
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN PARTIE DESCRIPTION GAUCHE DESKTOP-->
+                        <!-- PARTIE GRILLE DROITE DESKTOP-->
+                        <div class="prestaRight col-7 mx-auto">
+                            <!--DÉBUT PRESTA 1 DESKTOP-->
+                            <a href="./prestation.html">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Shampoing + Coupe</h3>
+                                    </div>
+                                    <p class = "price mb-0">20,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 1 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 2 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Shampoing + Coupe + Soin</h3>
+                                    </div>
+                                    <p class = "price mb-0">30,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 2 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 3 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Tresses / Locks</h3>
+                                    </div>
+                                    <p class = "price mb-0">25,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 3 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 4 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Coloration / Décoloration</h3>
+                                    </div>
+                                    <p class = "price mb-0">40,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 4 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 5 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes5.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Balayage</h3>
+                                    </div>
+                                    <p class = "price mb-0">45,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 5 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 6 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes6.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Extensions</h3>
+                                    </div>
+                                    <p class = "price mb-0">30,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 6 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 7 DESKTOP FEMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes7.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Lissage Brésilien</h3>
+                                    </div>
+                                    <p class = "price mb-0">50,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 7 DESKTOP FEMMES-->
+                            <!--DÉBUT PRESTA 8 DESKTOP FEMMES-->
+                            <a href="#"> 
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Femmes8.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Coiffure de cérémonie</h3>
+                                    </div>
+                                    <p class = "price mb-0">70,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 8 DESKTOP FEMMES-->
+                        </div>
+                        <!-- FIN PARTIE GRILLE DROITE -->
+                    </div>
+                    <!-- FIN BLOCK PRESTA DESKTOP FEMMES-->
+                </div>
+                <!-- FIN CONTENU SECTION FEMMES DESKTOP-->
+                <!-- DÉBUT CONTENU SECTION FEMMES MOBILE-->
+                <div class="d-block d-lg-none">
+                    <div class="prestaHeadMob col-12 px-0"  style="padding-top: 60px; padding-bottom: 60px;">
+                        <!-- PARTIE DESCRIPTION GAUCHE MOBILE-->
+                        <div class="prestaLeft d-flex flex-column align-items-center col-10 my-auto mx-auto p-2"><!-- DESCRIP BLOCK-->
+                            <h2 class="h3">La Femme</h2>
+                            <p class="mb-5">
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN DESCRIPTION GAUCHE MOBILE-->
+                        <!-- PARTIE GRILLE DROITE MOBILE-->
+                        <a href="./prestation.html">  <!--DÉBUT PRESTA 1 FEMMES-->
+                            <div class="row col-11 col-md-10 mx-auto px-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes1.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Shampoing + Coupe</h3>
+                                    <p class = "price mb-3">20,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 1 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 2 MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes2.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Shampoing + Coupe + Soin</h3>
+                                    <p class = "price mb-3">30,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 2 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 3 MOBILE FEMMES-->
+                        <a href="#"> 
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes3.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Tresses / Locks</h3>
+                                    <p class = "price mb-3">25,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 3 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 4 MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes4.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Coloration / Décoloration</h3>
+                                    <p class = "price mb-3">40,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 4 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 5 MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes5.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Balayage</h3>
+                                    <p class = "price mb-3">45,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 5 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 6 MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes6.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Extensions</h3>
+                                    <p class = "price mb-3">30,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 6 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 7MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes7.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Lissage Brésilien</h3>
+                                    <p class = "price mb-3">50,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 7 MOBILE FEMMES-->
+                        <!--DÉBUT PRESTA 8 MOBILE FEMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Femmes8.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Coiffure de cérémonie</h3>
+                                    <p class = "price mb-3">70,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 8 MOBILE FEMMES-->
+                    </div>
+                    <!-- FIN GRILLE DROITE MOBILE-->
+                </div> 
+                <!-- FIN CONTENU SECTION FEMMES MOBILE-->
+            </div> 
+            <!-- FIN ANCRE BLOC FEMMES -->
+            <!-- ANCRE BLOC HOMMES -->
+            <div id="BlockPrestaHommes" class="BlockPrestaListItem">
+                <!-- CONTENU SECTION HOMMES DESKTOP-->
+                <div class="d-none d-lg-block pinRight container-lg-fluid">
+                    <!-- DÉBUT BLOCK PRESTA DESKTOP HOMMES-->
+                    <div class="prestationBox d-flex bBG">
+                        <!-- PARTIE DESCRIPTION GAUCHE DESKTOP -->
+                        <div class="prestaLeft d-flex flex-column col-3 my-auto mx-auto p-2">
+                            <h2 class="h3">L'Homme</h2>
+                            <p class>
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN PARTIE DESCRIPTION GAUCHE DESKTOP-->
+                        <!-- PARTIE GRILLE DROITE DESKTOP-->
+                        <div class="prestaRight col-7 mx-auto">
+                            <!--DÉBUT PRESTA 1 DESKTOP-->
+                            <a href="./prestation.html">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Hommes1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Shampoing + Coupe</h3>
+                                    </div>
+                                    <p class = "price mb-0">20,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 1 DESKTOP HOMMES-->
+                            <!--DÉBUT PRESTA 2 DESKTOP HOMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Hommes2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Tresses / Locks</h3>
+                                    </div>
+                                    <p class = "price mb-0">25,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 2 DESKTOP HOMMES-->
+                            <!--DÉBUT PRESTA 3 DESKTOP HOMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Hommes3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Dégradé court</h3>
+                                    </div>
+                                    <p class = "price mb-0">15,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 3 DESKTOP HOMMES-->
+                            <!--DÉBUT PRESTA 4 DESKTOP HOMMES-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Hommes4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Coloration / Décoloration</h3>
+                                    </div>
+                                    <p class = "price mb-0">30,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 4 DESKTOP HOMMES-->
+                        </div>
+                        <!-- FIN PARTIE GRILLE DROITE HOMMES-->
+                    </div>
+                    <!-- FIN BLOCK PRESTA DESKTOP HOMMES-->
+                </div>
+                <!-- FIN CONTENU SECTION HOMMES DESKTOP-->
+                <!-- DÉBUT CONTENU SECTION HOMMES MOBILE-->
+                <div class="d-block d-lg-none">
+                    <div class="prestaHeadMob col-12 px-0 wBG"  style="padding-top: 60px; padding-bottom: 60px;">
+                        <!-- PARTIE DESCRIPTION GAUCHE MOBILE-->
+                        <div class="prestaLeft d-flex flex-column align-items-center col-10 my-auto mx-auto p-2"><!-- DESCRIP BLOCK-->
+                            <h2 class="h3">L'Homme</h2>
+                            <p class="mb-5">
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN DESCRIPTION GAUCHE MOBILE-->
+                        <!-- PARTIE GRILLE DROITE MOBILE-->
+                        <a href="./prestation.html">  <!--DÉBUT PRESTA 1 HOMMES-->
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Hommes1.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Shampoing + Coupe</h3>
+                                    <p class = "price mb-3">20,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 1 MOBILE HOMMES-->
+                        <!--DÉBUT PRESTA 2 MOBILE HOMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Hommes2.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Tresses / Locks</h3>
+                                    <p class = "price mb-3">25,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 2 MOBILE HOMMES-->
+                        <!--DÉBUT PRESTA 3 MOBILE HOMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Hommes3.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Dégradé court Homme</h3>
+                                    <p class = "price mb-3">15,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 3 MOBILE HOMMES-->
+                        <!--DÉBUT PRESTA 4 MOBILE HOMMES-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Hommes4.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Coloration / Décoloration</h3>
+                                    <p class = "price mb-3">30,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 4 MOBILE HOMMES-->
+                    </div>
+                    <!-- FIN GRILLE DROITE MOBILE HOMMES-->
+                </div> 
+                <!-- FIN CONTENU SECTION HOMMES MOBILE-->
+            </div> 
+            <!-- FIN ANCRE BLOC HOMMES --> 
+            <!-- ANCRE BLOC ENFANTS -->
+            <div id="BlockPrestaEnfants" class="BlockPrestaListItem">
+                <!-- CONTENU SECTION ENFANTS DESKTOP-->
+                <div class="d-none d-lg-block pinRight container-lg-fluid">
+                    <!-- DÉBUT BLOCK PRESTA DESKTOP ENFANTS-->
+                    <div class="prestationBox d-flex">
+                        <!-- PARTIE DESCRIPTION GAUCHE DESKTOP -->
+                        <div class="prestaLeft d-flex flex-column col-3 my-auto mx-auto p-2">
+                            <h2 class="h3">L'Enfant</h2>
+                            <p class>
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN PARTIE DESCRIPTION GAUCHE DESKTOP-->
+                        <!-- PARTIE GRILLE DROITE DESKTOP-->
+                        <div class="prestaRight col-7 mx-auto">
+                            <!--DÉBUT PRESTA 1 DESKTOP-->
+                            <a href="./prestation.html">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Coupe Fille</h3>
+                                    </div>
+                                    <p class = "price mb-0">20,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 1 DESKTOP ENFANTS-->
+                            <!--DÉBUT PRESTA 2 DESKTOP ENFANTS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Shampoing + Coupe Fille</h3>
+                                    </div>
+                                    <p class = "price mb-0">25,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 2 DESKTOP ENFANTS-->
+                            <!--DÉBUT PRESTA 3 DESKTOP ENFANTS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Soin cheveux abîmés Fille</h3>
+                                    </div>
+                                    <p class = "price mb-0">30,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 3 DESKTOP ENFANTS-->
+                            <!--DÉBUT PRESTA 4 DESKTOP ENFANTS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Coiffure de cérémonie Fille</h3>
+                                    </div>
+                                    <p class = "price mb-0">50,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 4 DESKTOP ENFANTS-->
+                            <!--DÉBUT PRESTA 5 DESKTOP ENFANTS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants5.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Dégradé mi-long Garçon</h3>
+                                    </div>
+                                    <p class = "price mb-0">20,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 5 DESKTOP ENFANTS-->
+                            <!--DÉBUT PRESTA 6 DESKTOP ENFANTS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Enfants6.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Dégradé court Garçon</h3>
+                                    </div>
+                                    <p class = "price mb-0">15,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 6 DESKTOP ENFANTS-->
+                        </div>
+                        <!-- FIN PARTIE GRILLE DROITE ENFANTS-->
+                    </div>
+                    <!-- FIN BLOCK PRESTA DESKTOP ENFANTS-->
+                </div>
+                <!-- FIN CONTENU SECTION ENFANTS DESKTOP-->
+                <!-- DÉBUT CONTENU SECTION ENFANTS MOBILE-->
+                <div class="d-block d-lg-none">
+                    <div class="prestaHeadMob col-12 px-0"  style="padding-top: 60px; padding-bottom: 60px;">
+                        <!-- PARTIE DESCRIPTION GAUCHE MOBILE-->
+                        <div class="prestaLeft d-flex flex-column align-items-center col-10 my-auto mx-auto p-2"><!-- DESCRIP BLOCK-->
+                            <h2 class="h3">L'Enfant</h2>
+                            <p class="mb-5">
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN DESCRIPTION GAUCHE MOBILE-->
+                        <!-- PARTIE GRILLE DROITE MOBILE-->
+                        <a href="./prestation.html">  <!--DÉBUT PRESTA 1 ENFANTS-->
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants1.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Coupe Fille</h3>
+                                    <p class = "price mb-3">20,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 1 MOBILE ENFANTS-->
+                        <!--DÉBUT PRESTA 2 MOBILE ENFANTS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants2.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Shampoing + Coupe Fille</h3>
+                                    <p class = "price mb-3">25,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 2 MOBILE ENFANTS-->
+                         <!--DÉBUT PRESTA 3 MOBILE ENFANTS-->
+                        <a href="#"> 
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants3.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Soin cheveux abîmés</h3>
+                                    <p class = "price mb-3">30,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 3 MOBILE ENFANTS-->
+                        <!--DÉBUT PRESTA 4 MOBILE ENFANTS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants4.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Coiffure de cérémonie Fille</h3>
+                                    <p class = "price mb-3">50,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 4 MOBILE ENFANTS-->
+                        <!--DÉBUT PRESTA 5 MOBILE ENFANTS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants5.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Dégradé mi-long Garçon</h3>
+                                    <p class = "price mb-3">20,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 5 MOBILE ENFANTS-->
+                        <!--DÉBUT PRESTA 6 MOBILE ENFANTS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Enfants6.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Dégradé court Garçon</h3>
+                                    <p class = "price mb-3">15,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 6 MOBILE ENFANTS-->
+                    </div>
+                    <!-- FIN GRILLE DROITE MOBILE ENFANTS-->
+                </div> 
+                <!-- FIN CONTENU SECTION ENFANTS MOBILE-->
+            </div> 
+            <!-- FIN ANCRE BLOC ENFANTS --> 
+            <!-- ANCRE BLOC SOINS -->
+            <div id="BlockPrestaSoins" class="BlockPrestaListItem">
+                <!-- CONTENU SECTION SOINS DESKTOP-->
+                <div class="d-none d-lg-block pinRight container-lg-fluid">
+                    <!-- DÉBUT BLOCK PRESTA DESKTOP SOINS-->
+                    <div class="prestationBox d-flex">
+                        <!-- PARTIE DESCRIPTION GAUCHE DESKTOP -->
+                        <div class="prestaLeft d-flex flex-column col-3 my-auto mx-auto p-2">
+                            <h2 class="h3">Soins et Beauté</h2>
+                            <p class>
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN PARTIE DESCRIPTION GAUCHE DESKTOP-->
+                        <!-- PARTIE GRILLE DROITE DESKTOP-->
+                        <div class="prestaRight col-7 mx-auto">
+                            <!--DÉBUT PRESTA 1 DESKTOP SOINS-->
+                            <a href="./prestation.html">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Soin des mains</h3>
+                                    </div>
+                                    <p class = "price mb-0">15,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 1 DESKTOP SOINS-->
+                            <!--DÉBUT PRESTA 2 DESKTOP SOINS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Soin des pieds</h3>
+                                    </div>
+                                    <p class = "price mb-0">17,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 2 DESKTOP SOINS-->
+                            <!--DÉBUT PRESTA 3 DESKTOP SOINS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Soin du visage</h3>
+                                    </div>
+                                    <p class = "price mb-0">25,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 3 DESKTOP SOINS-->
+                            <!--DÉBUT PRESTA 4 DESKTOP SOINS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Maquillage de cérémonie</h3>
+                                    </div>
+                                    <p class = "price mb-0">35,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 4 DESKTOP SOINS-->
+                            <!--DÉBUT PRESTA 5 DESKTOP SOINS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins5.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Pose de faux ongles</h3>
+                                    </div>
+                                    <p class = "price mb-0">15,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 5 DESKTOP SOINS-->
+                            <!--DÉBUT PRESTA 6 DESKTOP SOINS-->
+                            <a href="#">  
+                                <div class="gridElement container">
+                                    <div class="imageAndDescription container p-0 mb-1" style="background-image: url(./images/Soins6.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+                                        <div class="descriptionPrestation mb-0">Brève description en quelques lignes avec technique utilisée
+                                        </div>
+                                    </div>
+                                    <div class="blocTitrePresta mb-1">
+                                        <h3 class="h6">Pose de cils</h3>
+                                    </div>
+                                    <p class = "price mb-0">20,00 €</p>
+                                </div> 
+                            </a>
+                            <!--FIN PRESTA 6 DESKTOP SOINS-->
+                        </div>
+                        <!-- FIN PARTIE GRILLE DROITE SOINS-->
+                    </div>
+                    <!-- FIN BLOCK PRESTA DESKTOP SOINS-->
+                </div>
+                <!-- FIN CONTENU SECTION SOINS DESKTOP-->
+                <!-- DÉBUT CONTENU SECTION SOINS MOBILE-->
+                <div class="d-block d-lg-none">
+                    <div class="prestaHeadMob col-12 px-0"  style="padding-top: 60px; padding-bottom: 60px;">
+                        <!-- PARTIE DESCRIPTION GAUCHE MOBILE-->
+                        <div class="prestaLeft d-flex flex-column align-items-center col-10 my-auto mx-auto p-2"><!-- DESCRIP BLOCK-->
+                            <h2 class="h3">Soins et Beauté</h2>
+                            <p class="mb-5">
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                            </p>
+                        </div>
+                        <!-- FIN DESCRIPTION GAUCHE MOBILE-->
+                        <!-- PARTIE GRILLE DROITE MOBILE-->
+                        <a href="./prestation.html">  <!--DÉBUT PRESTA 1 SOINS-->
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins1.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Soin des mains</h3>
+                                    <p class = "price mb-3">15,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 1 MOBILE SOINS-->
+                        <!--DÉBUT PRESTA 2 MOBILE SOINS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins2.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Soin des pieds</h3>
+                                    <p class = "price mb-3">17,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 2 MOBILE SOINS-->
+                         <!--DÉBUT PRESTA 3 MOBILE SOINS-->
+                        <a href="#"> 
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins3.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Soin du visage</h3>
+                                    <p class = "price mb-3">25,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a><!--FIN PRESTA 3 MOBILE SOINS-->
+                        <!--DÉBUT PRESTA 4 MOBILE SOINS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins4.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Maquillage de cérémonie</h3>
+                                    <p class = "price mb-3">35,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 4 MOBILE SOINS-->
+                        <!--DÉBUT PRESTA 5 MOBILE SOINS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins5.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Pose de faux ongles</h3>
+                                    <p class = "price mb-3">15,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 5 MOBILE SOINS-->
+                        <!--DÉBUT PRESTA 6 MOBILE SOINS-->
+                        <a href="#">  
+                            <div class="row col-11 col-md-10 mx-auto py-1 py-3 prestaBlockItemMob my-3">
+                                <div class="imageAndDescriptionMob container-fluid" style="background-image: url(./images/Soins6.jpg); background-position: center; position: relative; height: 120px; width: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                                <div class="blocTitrePresta col-7 d-flex flex-column">
+                                    <h3 class="h6">Pose de cils</h3>
+                                    <p class = "price mb-3">20,00 €</p>
+                                    <p class="descriptionPrestationMob mb-0">Brève description en quelques lignes avec technique utilisée</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!--FIN PRESTA 6 MOBILE SOINS-->
+                    </div>
+                    <!-- FIN GRILLE DROITE MOBILE SOINS-->
+                </div> 
+                <!-- FIN CONTENU SECTION SOINS MOBILE-->
+            </div> 
+            <!-- FIN ANCRE BLOC SOINS --> 
+        </section> 
+        <!-- BLOC GALERIE LISTE -->
+        <section id="Galerie" class="d-flex">
+            <a href="./galerie.html" class="mx-auto">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./LogoMidPage.svg" alt="LogoMidPage" id="LogoMidPage" class="mb-5 img-fluid">
+                    <p style="text-decoration: underline;">Découvrez notre galerie photo</p>
+                </div>
+            </a>
+        </section>
+        <!-- À PROPOS -->
+        <section id="About" class="container-fluid">
+            <div class="row col-12 col-lg-10 mx-auto justify-content-center" id="AboutBlock">
+                <div class="Left col-12 col-md-10 col-lg-5 text-center d-flex flex-column align-self-center mt-5">
+                    <h2 class="h3 mb-5">À Propos</h2>
+                    <p>Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard.
+                        <br><br>
+                        Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. <br><br>
+                    Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum.
+                    Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable
+                    </p>
+                </div>
+                <div class="SectDeux col-12 col-lg-6 offset-lg-1">
+                    <div id="Staff1" class="col-12 mb-4" style="background-image: url(./images/staff.jpg); height: 300px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                    <div id="Staff2" class="col-12" style="background-image: url(./images/staff2.jpg); height: 300px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;"></div>
+                </div>
+            </div>
+        </section>
+        <!-- SOCIAL NETWORK -->
+        <section id="SocialNewtwork">
+            <p class="text-center" style="color: var(--pink);">Suivez-nous sur les réseaux</p>
+            <div class="text-center">
+                <img src="./Facebook25.svg" alt="Facebook">
+                <span class="ml-4 ml-lg-3"><img src="./Instagram25.svg" alt="Instagram"></span> 
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center p-4">
+            <p class="m-5"><a href="./galerie.html">galerie</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalInfos">Infos</a></p>
+            <p class="m-5"><a href="#" data-toggle="modal" data-target="#ModalContact">Contact</a></p>
+            <p class="m-5"><a href="#">Mention Légales</a></p>
+            <p class="m-5"><a href="#">Conditions Générales de vente</a></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
